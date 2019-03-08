@@ -5,7 +5,7 @@ config = {
     'description': 'Package to calculate a hierarchical approximative convex decomposition'
                    ' of a union of polytopes.',
     'author': 'Lovis Anderson',
-    'author_email': 'lovisanderson@gmail.com',
+    'author_email': 'lovisanderson@posteo.net',
     'license': 'GPL',
     'version': '0.1',
     'packages': ['hacd'],

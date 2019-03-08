@@ -1,6 +1,6 @@
 # *****************************************************************************
 #       Copyright (C) 2017      Tom Walther
-#                     2017-2018 Lovis Anderson  <lovisanderson@gmail.com>
+#                     2017-2018 Lovis Anderson  <lovisanderson@posteo.net>
 #                     2017-2018 Benjamin Hiller <hiller@zib.de>
 #
 #  Distributed under the terms of the GNU General Public License (GPL)

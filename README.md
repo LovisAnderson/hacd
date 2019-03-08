@@ -2,7 +2,7 @@
 This package is still under development and far from perfect.
  Nonetheless it is somewhat stable and able to compute an hierarchical
  approximate convex decomposition for a union of polytopes. A technical description of
- our approach is in the making. The code is faster than the paper here :-)
+ our approach is in the making.
 ## Installation
 You need to have [sweepvolume](https://gitlab.com/LovisAnderson/sweepvolume) package installed.
 After installation sweepvolume and its dependencies you can install hacd through
@@ -13,7 +13,7 @@ You can call hacd through
 ``
 python acd.py @/path/to/some/configuration.cfg
 ``
-An example configuration can be found in test_data/test2D.cfg. In the output directory
+An example configuration can be found under testing/test_data/test2D.cfg. In the output directory
 you can then find 3 files. With help of the **log.txt** file you can get insight into the process
 and the decisions that have been made. In **tree.json** the whole hierarchy is saved.
  **tree.png** is a graph visualization of the quality of the tree.

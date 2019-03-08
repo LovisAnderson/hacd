@@ -27,7 +27,7 @@ RUN_CONFIG = {
 }
 INSTANCES = {
     'test2D': {
-        'path': os.path.abspath('test_data/test2D.json'),
+        'path': os.path.abspath('testing/test_data/test2D.json'),
         'description': PolytopeDescription.INNER_DESCRIPTION
     }
 }

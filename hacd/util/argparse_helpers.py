@@ -16,6 +16,6 @@ def enum_action(enum):
 
 def valid_file(path):
     if not os.path.isfile(path):
-        print("No such file: <{}>".format(path))
+        print("No such file: <{}>".format(os.path.abspath(path)))
         exit()
     return path

@@ -14,10 +14,13 @@ from itertools import product
 from hacd.cut_generators.cut_generators_enum import CutGenerator
 from hacd.util.geometry import PolytopeDescription
 
+
 cut_generators = {
     'sweep': CutGenerator.SWEEP,
     'facet': CutGenerator.FACET
 }
+
+
 RUN_CONFIG = {
     'instance_name': None,
     'cut_generator': None,
@@ -25,6 +28,8 @@ RUN_CONFIG = {
     'max_depth': 3,
     'nr_cuts': 7
 }
+
+
 INSTANCES = {
     'test2D': {
         'path': os.path.abspath('testing/test_data/test2D.json'),
@@ -64,6 +69,6 @@ def pytest_generate_tests(metafunc):
 def populate_configuration(configuration, conf_dict):
     from copy import deepcopy
     populated_dict = deepcopy(configuration)
-    for key, item in conf_dict.iteritems():
+    for key, item in conf_dict.items():
         populated_dict[key] = item
     return populated_dict

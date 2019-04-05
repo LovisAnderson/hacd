@@ -55,7 +55,7 @@ class Node(object):
         """
 
         self.dim = union_cd.dim
-        assert isinstance(id, basestring) or id is None
+        assert isinstance(id, str) or id is None
         assert isinstance(depth, int) and depth >= 0
         assert isinstance(tol_rel, float) and 0 <= tol_rel <= 1
         assert isinstance(tol_abs, float) and tol_abs >= 0 or tol_abs is None
@@ -175,8 +175,8 @@ class Node(object):
             'volume': self.volume,
             'cell_decomposition': self.union_cd.as_dict(),
             'convex_volume': self.convex_hull_volume,
-            'parent_id': self.parent_id,
-            'children': [child.id for child in self.children],
+            'parent_id': str(self.parent_id),
+            'children': [str(child.id) for child in self.children],
             'total_error': self.convex_hull_volume - self.volume,
             'relative_error': self.relative_error()
         }

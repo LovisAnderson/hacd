@@ -16,7 +16,7 @@ import hacd.analysis as ana
 from sweepvolume.cell_decomposition import Cell_Decomposition
 from sweepvolume.geometry import Polytope, Vertex, Hyperplane
 
-from geometry import PolytopeDescription
+from .geometry import PolytopeDescription
 
 import numpy as np
 

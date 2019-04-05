@@ -11,9 +11,13 @@ config = {
     'packages': ['hacd'],
     'package_dir': {'hacd': 'hacd'},
     'install_requires': [
-        'enum34',
-        'sweepvolume',
         'argparse',
+        'networkx',
+        'numpy',
+        'ordered_set',
+        'pandas',
+        'pygraphviz',
+        'sweepvolume',
     ],
 }
 

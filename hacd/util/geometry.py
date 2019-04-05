@@ -40,7 +40,7 @@ def bounding_box(polytopes):
     :return: (lower_bounds, upper_bounds) tuple with lower (upper) bound
      for each coordinate.
     """
-    all_points = np.vstack((poly.get_vertex_coordinates() for poly in polytopes))
+    all_points = np.vstack(list(poly.get_vertex_coordinates() for poly in polytopes))
     # we need a slightly bigger bounding box bc dropping facets
     #  and pertubation can create vertices outside of the box
     # to do : smarter tube around bbox (taking size into consideration)
